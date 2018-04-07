@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Action Games</title>
+    <link href="../css/ActionGames.css" media="screen and (min-width: 768px)" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="../js/Animation.js"></script>
+</head>
+<body onload="statusLogIn()">
+<!--Header-->
+<div id="header">
+    <div id="logo">
+        <a href="FinalProject.html">
+            <img src="../img/header.png" style="width: 60%; height: 75px">
+        </a>
+    </div>
+    <div>
+        <ul class="menu">
+            <li>
+                <a href="SignIn.html" target="_self">
+                    <div id="Account" onmouseover="showLogOut()">&nbsp;</div>
+                </a>
+                <ul class="submenu" id="LogOut">
+                    <li onclick="logOutAccount()">
+                        <a href="SignIn.html" target="_self"><div >Log Out</div></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="AllGames.html" target="_self">All Games</a></li>
+            <li>Genre Games
+                <ul class="submenu">
+                    <li><a href="ActionGames.html" target="_self">Actions</a></li>
+                    <li><a href="AdvantureGames.html" target="_self">Adventure</a></li>
+                    <li><a href="SportGames.html" target="_self">Sport</a></li>
+                </ul>
+            </li>
+            <li>Top Games
+                <ul class="submenu">
+                    <li><a href="TopGames2016.html" target="_self">2016</a></li>
+                    <li><a href="TopGames2015.html" target="_self">2015</a></li>
+                    <li><a href="TopGames2014.html" target="_self">2014</a></li>
+                </ul>
+            </li>
+            <li id="search"><img src="../img/games/kinhlup.png" onclick="showSearchingBox()"></li>
+        </ul>
+    </div>
+</div>
+<div id="seachBox" >
+    <form name="search">
+        <input type="text" placeholder="Searching...." id="inputBox" name="inputBox" oninput="showDSGames(this)" checked>
+    </form>
+    <img src="../img/X.png" id="xbutton" onclick="hideSearchingBox()">
+</div>
+<div id="DSGames">
+    <a href="Game.html" target="_blank"><div class="dsGame"><img src="../img/games/diablo3.jpg" class="IconGame"> <div class="dsGameText">Diablo 3</div></div></a>
+    <a href="GamePages/CrushLand.html" target="_blank"><div class="dsGame"><img src="../img/games/CrushLands.jpg" class="IconGame"> <div class="dsGameText">Crush Lands </div></div></a>
+    <a href="GamePages/CallOfDuty.html" target="_blank"><div class="dsGame"><img src="../img/games/callofduty.jpg" class="IconGame"> <div class="dsGameText">Call of Duty </div></div></a>
+    <a href="GamePages/BattleAlert.html" target="_blank"><div class="dsGame"><img src="../img/games/Battle-Alert.jpg" class="IconGame"> <div class="dsGameText">Battle Alert </div></div></a>
+    <a href="GamePages/DragonBall.html" target="_blank"><div class="dsGame"><img src="../img/games/dragonball-xenoverse.png" class="IconGame"> <div class="dsGameText">Dragon Ball Xenoverse </div></div></a>
+    <a href="GamePages/dragonBlaze.html" target="_blank"><div class="dsGame"><img src="../img/games/dragonBlaze.jpg" class="IconGame"> <div class="dsGameText">Dragon Blaze </div></div></a>
+    <a href="GamePages/DragonCancer.html" target="_blank"><div class="dsGame"><img src="../img/games/dragon_cancer.jpg" class="IconGame"> <div class="dsGameText">Dragon Cancer </div></div></a>
+    <a href="GamePages/Fable%203.html" target="_blank"><div class="dsGame"><img src="../img/games/fable_3.jpg" class="IconGame"> <div class="dsGameText">Fable 3 </div></div></a>
+    <a href="GamePages/HitMan.html" target="_blank"><div class="dsGame"><img src="../img/games/hitman.jpg" class="IconGame"> <div class="dsGameText">Hit Man </div></div></a>
+    <a href="GamePages/Naruto.html" target="_blank"><div class="dsGame"><img src="../img/games/Naruto.png" class="IconGame"> <div class="dsGameText">Naruto </div></div></a>
+    <a href="GamePages/BasketballManager.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/BasketballManager.jpg" class="IconGame"> <div class="dsGameText">Basketball Manager </div></div></a>
+    <a href="GamePages/WWEImortal.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/WWEBanner.jpg" class="IconGame"> <div class="dsGameText">WWE Banner </div></div></a>
+    <a href="GamePages/BloodBowl.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/BloodBowl.jpg" class="IconGame"> <div class="dsGameText">Blood Bowl </div></div></a>
+    <a href="GamePages/Altelia.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/AltelierBanner.jpg" class="IconGame"> <div class="dsGameText">Altelier </div></div></a>
+    <a href="GamePages/Beowulf.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/BeowulFBackGround.jpg" class="IconGame"> <div class="dsGameText">Beowulf </div></div></a>
+    <a href="GamePages/DawnOfMagic.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/dawnOfMagicBanner.jpg" class="IconGame"> <div class="dsGameText">Dawn Of Magic </div></div></a>
+    <a href="GamePages/DownOfWar.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/dawnOfWarBackGround.jpg" class="IconGame"> <div class="dsGameText">Dawn Of War </div></div></a>
+    <a href="GamePages/DragonDogMa.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/DragonDogmaBanner.webp" class="IconGame"> <div class="dsGameText">Dragon Dogma</div></div></a>
+    <a href="GamePages/TaleOfBerseria.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TaleOfBerseriaBanner.jpg" class="IconGame"> <div class="dsGameText">Tale Of Berseria</div></div></a>
+    <a href="GamePages/DeadRising.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/deadRisingBanner.jpg" class="IconGame"> <div class="dsGameText">Dead Rising</div></div></a>
+    <a href="GamePages/Dirt3.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/Dirt3.jpg" class="IconGame"> <div class="dsGameText">Dirt 3</div></div></a>
+    <a href="GamePages/F1_2015.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/F1_2015.jpg" class="IconGame"> <div class="dsGameText">F1 2015</div></div></a>
+    <a href="GamePages/FairyFencer.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/FairyFencerBanner.jpg" class="IconGame"> <div class="dsGameText">Fairy Fencer</div></div></a>
+    <a href="GamePages/LifeIsStrange.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/LifeIsStrange.png" class="IconGame"> <div class="dsGameText">Life Is Strange</div></div></a>
+    <a href="GamePages/ForzaHorizon3.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/ForzaHorizon3.jpg" class="IconGame"> <div class="dsGameText">Forza Horizon 3</div></div></a>
+    <a href="GamePages/FIFA14.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/FIFA14.jpg" class="IconGame"> <div class="dsGameText">FIFA 14</div></div></a>
+    <a href="GamePages/Grid.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/GRIDBanner.jpg" class="IconGame"> <div class="dsGameText">Grid</div></div></a>
+    <a href="GamePages/RIDE2.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/RIDE2.jpg" class="IconGame"> <div class="dsGameText">Ride 2</div></div></a>
+    <a href="GamePages/NeedForSpeed.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/NeedForSpeed.jpg" class="IconGame"> <div class="dsGameText">Need For Speed</div></div></a>
+    <a href="GamePages/Tennis.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TennisBanner.jpg" class="IconGame"> <div class="dsGameText">Tennis</div></div></a>
+    <a href="GamePages/Pes.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/PES2017.jpg" class="IconGame"> <div class="dsGameText">PES 2016</div></div></a>
+    <a href="GamePages/ShadowBlood.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/shadowBloodBanner.png" class="IconGame"> <div class="dsGameText">Shadow Blood</div></div></a>
+    <a href="GamePages/TheGate.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TheGateBanner.jpg" class="IconGame"> <div class="dsGameText">The Gate</div></div></a>
+    <a href="GamePages/Transformer.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TransformerBanner.jpg" class="IconGame"> <div class="dsGameText">Transformer</div></div></a>
+    <a href="GamePages/NBK2016.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/NBK2016.jpg" class="IconGame"> <div class="dsGameText">NBK 2016</div></div></a>
+    <a href="GamePages/NBA2017.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/NBA2017.jpg" class="IconGame"> <div class="dsGameText">NBA 2017</div></div></a>
+    <a href="GamePages/Vector36.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/Vector36.jpg" class="IconGame"> <div class="dsGameText">Vector 36</div></div></a>
+    <a href="GamePages/AquaMoto.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/AquaMoto.jpg" class="IconGame"> <div class="dsGameText">Aqua Moto</div></div></a>
+</div>
+<div id="bg">
+    Action Games
+</div>
+<!--Body-->
+<div class="main" id="main1">
+    <div>
+        <div class="allgames">
+            <div class="button"><img src="../img/back.png" class="show" onclick="backMain(1)"></div>
+            <div class="imggame"><a href="GamePages/DragonCancer.html"><img src="../img/games/dragon_cancer.jpg" class="show"></a></div>
+            <div class="imggame"><a href="GamePages/LifeIsStrange.html"><img src="../img/games/life_is_strange.jpg" class="show"></a></div>
+            <div class="imggame"><a href="GamePages/Naruto.html"><img src="../img/games/Naruto.png" class="show"></a></div>
+            <div class="button"><img src="../img/next.png" class="show" onclick="nextMain(1)"></div>
+        </div>
+        <div class="information" id="information1">
+            <div class="info show">
+                <span>Dragon Cancer</span><br/>
+                Adventure, Story, Indie
+            </div>
+            <div class="info show">
+                <span>Life is Strange</span><br/>
+                Adventure, action, Sand-Box
+            </div>
+            <div class="info show">
+                <span>Naruto</span><br/>
+                Adventure, Action
+            </div>
+        </div>
+    </div>
+</div>
+<div class="submain" id="main2">
+    <div class="allgames">
+        <div class="button"><img src="../img/back.png" class="hide" onclick="backMain(2)"></div>
+        <div class="imggame"><a href="GamePages/DragonBall.html"><img src="../img/games/dragonball-xenoverse.png" class="hide"></a></div>
+        <div class="imggame"><a href="GamePages/GodOfWar.html"><img src="../img/games/godofwar.jpg" class="hide"></a></div>
+        <div class="imggame"><a href="GamePages/Fable%203.html"><img src="../img/games/fable_3.jpg" class="hide"></a></div>
+        <div class="button"><img src="../img/next.png" class="hide" onclick="nextMain(2)"></div>
+    </div>
+    <div class="information" id="information2">
+        <div class="info hide">
+            <span>Dragon Ball Xenoverse 1</span><br/>
+            Adventure, action
+        </div>
+        <div class="info hide">
+            <span>God of War 2013</span><br/>
+            Adventure, action
+        </div>
+        <div class="info hide">
+            <span>Fable 3</span><br/>
+            Advanture, Action, Sand-box
+        </div>
+    </div>
+</div>
+
+
+<div class="main2" id="main3">
+    <div>
+        <div class="allgames">
+            <div class="button"><img src="../img/back.png" class="show" onclick="backMain(3)"></div>
+            <div class="imggame"><a href="GamePages/Altelia.html"><img src="../img/Gameplay/AltelierBanner.jpg" class="show"></a></div>
+            <div class="imggame"><a href="GamePages/FairyFencer.html"><img src="../img/Gameplay/FairyFencerBanner.jpg" class="show"></a></div>
+            <div class="imggame"><a href="GamePages/TaleOfBerseria.html"><img src="../img/Gameplay/TaleOfBerseriaBanner.jpg" class="show"></a></div>
+            <div class="button"><img src="../img/next.png" class="show" onclick="nextMain(3)"></div>
+        </div>
+        <div class="information" id="information3">
+            <div class="info show">
+                <span>Altelier 2016</span><br/>
+                Advanture, action, RPG
+            </div>
+            <div class="info show">
+                <span>Fairy Fencer 2016</span><br/>
+                Adventure, action, RPG
+            </div>
+            <div class="info show">
+                <span>Tale of Berseria</span><br/>
+                Adventure, action, RPG
+            </div>
+        </div>
+    </div>
+</div>
+<div class="submain" id="main4">
+    <div class="allgames">
+        <div class="button"><img src="../img/back.png" class="hide" onclick="backMain(4)"></div>
+        <div class="imggame"><a href="GamePages/ShadowBlood.html"><img src="../img/games/ShadownBlood.jpg" class="hide"></a></div>
+        <div class="imggame"><a href="GamePages/DawnOfMagic.html"><img src="../img/games/dawofwar.jpg" class="hide"></a></div>
+        <div class="imggame"><a href="GamePages/Beowulf.html"><img src="../img/games/beowulf.jpg" class="hide"></a></div>
+        <div class="button"><img src="../img/next.png" class="hide" onclick="nextMain(4)"></div>
+    </div>
+    <div class="information" id="information4">
+        <div class="info hide">
+            <span>Shadow Blood</span><br/>
+            Adventure, Action
+        </div>
+        <div class="info hide">
+            <span>Dawn of Magic</span><br/>
+            Advanture, Magic, TrainEXP
+        </div>
+        <div class="info hide">
+            <span>Beowulf 2</span><br/>
+            Action, Adventure, Fantasy
+        </div>
+    </div>
+</div>
+
+
+<div class="main2" id="main5">
+    <div>
+        <div class="allgames">
+            <div class="button"><img src="../img/back.png" class="show" onclick="backMain(5)"></div>
+            <div class="imggame"><a href="GamePages/TheGate.html"><img src="../img/games/TheGate.jpg" class="show"></a></div>
+            <div class="imggame"><a href="GamePages/CallOfDuty.html"><img src="../img/games/Modren-Sniper.jpg" class="show"></a></div>
+            <div class="imggame"><a href="GamePages/DragonDogMa.html"><img src="../img/games/dragon_dogma.png" class="show"></a></div>
+            <div class="button"><img src="../img/next.png" class="show" onclick="nextMain(5)"></div>
+        </div>
+        <div class="information" id="information5">
+            <div class="info show">
+                <span>The Gate</span><br/>
+                Adventure, Indie
+            </div>
+            <div class="info show">
+                <span>Modern Sniper</span><br/>
+                Adventure, FPS
+            </div>
+            <div class="info show">
+                <span>Dragon Dogma</span><br/>
+                Adventure, action, Sand-Box
+            </div>
+        </div>
+    </div>
+</div>
+<div class="submain" id="main6">
+    <div class="allgames">
+        <div class="button"><img src="../img/back.png" class="hide" onclick="backMain(6)"></div>
+        <div class="imggame"><a href="GamePages/DragonBall.html"><img src="../img/games/dragonball.jpg" class="hide"></a></div>
+        <div class="imggame"><a href="GamePages/dragonBlaze.html"><img src="../img/games/elune-saga.jpg" class="hide"></a></div>
+        <div class="imggame"><a href="GamePages/CrushLand.html"><img src="../img/games/Game-Kingdom-Rush.jpg" class="hide"></a></div>
+        <div class="button"><img src="../img/next.png" class="hide" onclick="nextMain(6)"></div>
+    </div>
+    <div class="information" id="information6">
+        <div class="info hide">
+            <span>Dragon Ball Xenoverse 2</span><br/>
+            Adventure, Action
+        </div>
+        <div class="info hide">
+            <span>Enlune Saga</span><br/>
+            Adventure, Indie
+        </div>
+        <div class="info hide">
+            <span>Crash Lands</span><br/>
+            Adventure, RPG
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<div id="footer">
+    <div id="f1">
+        <div>
+            <img src="../img/pandora_logo.png" style="width: 150px; height: 100px;">
+        </div>
+        <div>
+            Copyrights © 2014 - 2016 All Rights Reserved by PandoraBox Inc.<br/>
+            Terms of Use / Privacy Policy
+        </div>
+    </div>
+    <div id="f2">
+        <div id="f21">Contact with Us</div>
+        <div>
+            <img src="../img/phone-black.png" style="width: 20px; height: 20px">
+            <span>Phone: (84)909217723</span>
+        </div>
+        <div>
+            <img src="../img/gmail.png" style="width: 20px; height: 20px">
+            <span>Email: Huydqse62353@fpt.edu.vn</span>
+        </div>
+        <div>
+            <img src="../img/facebook-flat-vector-logo-400x400.png" style="width: 20px; height: 20px;">
+            <a href="https://www.facebook.com/quanghuy323" target="_blank">
+                Facebook: quanghuy323@facebook.com
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

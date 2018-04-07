@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab06</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        ul li{
+            list-style-type: none;
+            float: left;
+            /*border: 1px solid black;*/
+            margin-left: 5%;
+        }
+        ul{
+            /*border: 1px solid blue;*/
+            padding-left: 12%;
+        }
+        li:hover{
+            background-color: pink!important;
+            cursor: pointer;
+            /*border: 1px solid black;*/
+        }
+        #search{
+            width: 20%;
+            height: 30px;
+            background-image: url("img/bt06_search.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 70%;
+            padding-left: 1%;
+            border: 1px solid #b8b8b8;
+        }
+        #btn{
+            width: 5%;
+            height: 35px;
+            position: relative;
+            left: 70%;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+    </style>
+    <script>
+        function doinen(x) {
+            var t=document.getElementById("menu");
+            var arr=t.getElementsByTagName("li");
+            for (var i =0; i < arr.length;i++)
+                arr[i].style.backgroundColor="white";
+            x.style.backgroundColor="pink";
+            x.style.cursor="pointer";
+        }
+        function tim() {
+
+            var input=document.getElementById("search");
+            var text=input.value;
+            var page;
+
+            for (var i=1; i<=5; i++){
+                var tmp=window.localStorage.getItem(text);
+                if (tmp != null){
+//                   window.location.replace(tmp);
+                    window.open(tmp);
+                }else{
+                    alert("not found");
+                    return;
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="search" placeholder="Can we help you find something?" ><input type="button" onclick="tim()" value="tim" id="btn">
+<h1>CALVINKLEIN</h1>
+<ul id="menu">
+    <li onclick="doinen(this)" >WOMEAN</li>
+    <li onclick="doinen(this)" >MEN</li>
+    <li onclick="doinen(this)" >UNDERWEAR</li>
+    <li onclick="doinen(this)" >FRAGRANCE</li>
+    <li onclick="doinen(this)" >HOME</li>
+    <li onclick="doinen(this)" >SALE</li>
+    <li onclick="doinen(this)" >PROJECT</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <style>
+        img { width: 400px; height: 300px;}
+        p { width: 200px; color: #fff987; margin-top: -100px; margin-left: 200px; z-index: 1; position: relative;
+            font-size: 24px;
+        }
+        p:hover { cursor: pointer;}
+    </style>
+    <script>
+        var a = ['img/games/dawofwar.jpg','img/games/beowulf.jpg','img/games/naughty.jpg,img/games/Naruto.png'];
+
+        function show(boanh) {
+            var w = window.open();
+            w.document.write("<h1>Gallery</h1>");
+            var tmp_ngoai = document.createElement("div");
+            tmp_ngoai.style.backgroundColor="pink";
+            tmp_ngoai.style.width="400px";
+            tmp_ngoai.style.height="300px";
+            w.document.body.appendChild(tmp_ngoai);
+        }
+    </script>
+</head>
+<body>
+<img src="img/games/Naruto.png">
+<p onclick="show(a)">Show Gallery =><</p>
+</body>
+</html>

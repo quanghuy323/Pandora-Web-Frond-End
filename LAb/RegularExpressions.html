@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function check() {
+            var tag1 = document.f.ten;
+            var tag2 = document.f.email;
+            var tag3 = document.f.password;
+            var p1 = /^[a-zA-Z]+(\s[a-zA-Z]+)*$/; //kiểm tra họ tên
+            var p2 = /^(\w)+[@][a-zA-Z]+[.][a-zA-Z]+([.][a-zA-Z]+)?$/; //kiểm tra email
+            var p3 = /[a-z]+/;
+            var p3_2 = /[A-Z]+/
+            var p3_3 = /[0-9]+/;
+            var p3_4 = /[ @#~%]+/;
+            if (p1.test(tag1.value)==false) {
+                alert("Tên sai");
+                tag1.focus();
+                return false;
+            }
+            if (p2.test((tag2.value)==false)){
+                alert("Email sai");
+                tag2.focus();
+                return false;
+            }
+            if (p3.test(tag3.value)==false || p3_2.test(tag3.value)==false || p3_3.test(tag3.value)==false ||
+                p3_4.test(tag3.value)==false || tag3.value.length<8 == false){
+                alert("Password sai");
+                tag3.focus();
+                return false;
+            }
+            alert("cam on. Dang ky thanh cong");
+            return true;
+        }
+    </script>
+</head>
+<body>
+<form name="f" action="LAB.html">
+    Họ tên <input type="text" name="ten">*<br/>
+    Email <input type="text" name="email">*<br/>
+    Password <input type="text" name="password">*<br/>
+    <input type="submit" value="submit" onclick="return check()">
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main { width: 100%; height: 500px; background-color: #6600ff}
+        #main img { width: 150px; height: 150px; float: left; margin: 10px;}
+        #detail { width: 200px; height: 300px;
+                  background-color: #999999; display: none; position: absolute;
+        }
+    </style>
+    <script src="js/gioHang.js">
+    </script>
+</head>
+<body onload="init()">
+<div id="main" onclick="unshow()">
+    <img src="img/games/Naruto.png" onmouseover="show(this,'sp1','quan lot',100,'100%cotton, giặt tay')"/>
+    <img src="img/games/dragonball-xenoverse.png" onmouseover="show(this,'sp5','lua',25,'lúa miền tay')"/>
+
+    <div id="detail">
+        <p id="ma"></p>
+        <p id="ten"></p>
+        <p id="gia"></p>
+        <p id="mota"></p>
+
+    </div>
+
+    <div id="cart">
+
+    </div>
+</div>
+
+</body>
+</html>

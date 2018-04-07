@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen Anh</title>
+    <style>
+        img { width: 300px; height: 300px;}
+    </style>
+    <script>
+        var tmp = ['img/games/dawofwar.jpg','img/games/beowulf.jpg','img/games/naughty.jpg'];
+        var i = 0;
+        var timeid;
+        function chayQC() {
+            var anh = document.getElementById("qc");
+            anh.src = tmp[i];
+            i++;
+            i = i % 3;
+            timeid = window.setTimeout("chayQC()",1000);
+        }
+        function dungQc() {
+            window.clearTimeout(timeid);
+        }
+        function moQC(anh) {
+            if (anh.src.lastIndexOf("img/games/dawofwar.jpg") > 0)
+                window.open("http://www.google.com");
+            else if (anh.src.lastIndexOf("img/games/beowulf.jpg") > 0)
+                window.open(("http://vnexpress.net"));
+            else
+                window.open("http://www.facebook.com");
+        }
+    </script>
+</head>
+<body onload="chayQC()">
+<img src="img/games/dawofwar.jpg" id="qc" onmouseover="dungQc()" onmouseout="chayQC()" onclick="moQC(this)"/>
+</body>
+</html>

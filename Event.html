@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function tim() {
+            alert("ahihi");
+        }
+        function demo() {
+            if (event.keyCode >= 48 && event.keyCode <= 57)
+                alert("đừng nhập số");
+            if (event.keyCode==13)
+                tim();
+        }
+        function demo2(x,size) {
+            x.style.width=size + "px";
+            x.style.transition = "1 width 1s";
+        }
+        function loadSanPham() {
+            var a = ["iphone","ipad","ipop"];
+            var b = ["tv","tủ lạnh","máy giặt","điện thoại"];
+
+            var s1 = document.getElementById("hang");
+            var s2 = document.getElementById("sp");
+
+            var pos = s1.selectedIndex; //lấy vị trí index
+            //xóa các option có trong S2
+            while (s2.length>0)
+                s2.remove(0);
+            if (pos == 1){ //apple
+                for (var i=0; i<a.length; i++){
+                    var x = document.createElement("option");
+                    x.text = a[i];
+                    s2.add(x);
+                }
+            }else if (pos==2){
+                for (var i=0; i<b.length; i++){
+                    var x = document.createElement("option");
+                    x.text = b[i];
+                    s2.add(x);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+Nhập từ khóa cần tìm <input type="text" onkeypress="demo()" onfocus="demo2(this,400)" onblur="demo2(this,200)"/>
+<!--dùng cho hàm input , tương tự onclick ...-->
+<input type="button" value="search" onclick="tim()"/>
+
+<select id="hang" onchange="loadSanPham()">
+    <option>chọn hãng</option>
+    <option>Apple</option>
+    <option>Samsung</option>
+</select>
+<select id="sp">
+
+</select>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {margin-top: 0px; margin-left: 0px; margin-right: 0px; overflow-x: hidden; }
+
+a{text-decoration:none;}
+.menu a {color: blue}
+.menu a:hover {color:crimson}
+a:hover{color:#60f}
+
+#header { width: 100%; height: 80px; box-sizing: border-box; float: left;
+    position: fixed; z-index: 3; background-color: white;
+}
+
+.menu { width: 50%; height: 80px; box-sizing: border-box; float: right;
+    list-style-type: none;
+    font-family: "Adobe Arabic"; font-size: 30px; text-align: right; color: blue;
+    margin-top: 0px; padding-top: 20px; font-weight: bold;
+}
+
+.menu  li { float: left; width: 22.5%; height: 32px ; text-align: center;
+    border: solid 0.5px #cccccc;
+}
+#LogOut { background-color: white;}
+
+#logo{
+    width: 40%; height: 80px; float: left; box-sizing: border-box;
+    margin-left: 20px;
+}
+ul.submenu > li {
+    width: 138%; list-style-type: none; background-color: white;
+    text-align: center; margin-left: -40px;
+}
+ul.submenu { display: none; }
+li:hover { cursor: pointer; color: crimson;}
+li:hover ul.submenu { display: block;}
+ul.submenu li:hover {border-bottom: solid #1bbea0 3px}
+
+#search {float: left; width: 7.5%; box-sizing: border-box; border: none}
+#search img {width: 20px; height: 20px; padding-top: 5px;}
+#seachBox {float:left; width: 70%; height: 50px; margin-top: 100px; margin-left: 15%;}
+#inputBox {width: 100%; height: 42px; border-radius: 20px; font-size: 20px; padding-left: 10px;  }
+#xbutton {width: 25px; height: 25px; float: right; margin-top: -36px; margin-right: 10px; opacity: 0.2; position: relative}
+#xbutton:hover {cursor: pointer; opacity: 1}
+#DSGames {width: 69%; height: 0px; float: left; z-index: 0; position: relative; margin-left: 16%; overflow-y: auto; padding-top: -30px;
+    background-color: white; border-radius: 20px; opacity: 0;
+}
+#DSGames a {color: black}
+.dsGame {width: 100%; height: 80px; box-sizing: border-box; opacity: 0}
+.dsGame:hover {cursor: pointer; background-color: #1bbea0}
+.dsGameText {font-size: 30px; padding-top: 20px; padding-left: 40px; float: left}
+.IconGame {width: 100px; height: 78px;float: left}
+
+#bg { width: 100%; height: 100px; float: left; box-sizing: border-box; z-index: 1; position: relative;
+    background-color: #1bbea0; background-image: url("backgroud.title.png"); background-repeat: repeat;
+    color: white; font-size: 50px; text-align: center; padding-top: 20px; margin-top: -50px;
+}
+
+#backgroundmain {
+    width: 100%; height: 1000px; margin-top: 10px; float: left; box-sizing: border-box;
+    background-color: #222222;
+}
+#bgpicture {width: 80%; height: 100%; float: left}
+#bgtext {width: 20%; height: 100%; float: left}
+#bgpic { margin-left: 10px; width: 100%; height: 100%; float: left;}
+.bgpicMain {margin-left: 10px; width: 95%; height: 95%; opacity: 1; z-index: 1; position: inherit;}
+.bgpicSubmain {margin-left: 10px; width: 95%; height: 95%; margin-top: -1030px; opacity: 1; z-index: 0; position: inherit;}
+.bgpicSubmain2 {margin-left: 10px; width: 95%; height: 95%; margin-top: -1030px; opacity: 1; z-index: 0; position: inherit;}
+#next { width: 50px; height: 50px; float: right; margin-top: -600px; margin-right: 70px; z-index: 2; position: relative;
+        opacity: 0;
+}
+#next:hover {cursor: pointer}
+#back { width: 50px; height: 50px; float: left; margin-top: -600px; z-index: 2; position: relative; margin-left: 10px;
+        opacity: 0;
+}
+#back:hover {cursor: pointer}
+#text {
+    color: white; font-size: 50px; text-align: center; font-weight: bolder;
+    padding-top: 300px; padding-right: 80px;
+}
+#signin {
+    float: right; margin-right: 100px; margin-top: 30px;
+    border: 4px solid white;
+    width: 150px; height: 40px;
+}
+#signin span {
+    color: white; font-size: 30px; font-weight: bold; padding-left: 10px; padding-top: 5px;
+}
+#slogan {
+    width: 100%; height: 100px; box-sizing: border-box; float: left;
+    background-color: white; color: black; background-color: white;
+    font-family: "Consolas"; font-size: 50px; text-align: center;
+    padding-top: 20px;
+}
+#footer {
+    width: 100%; height: 200px; box-sizing: border-box; float: left;
+    background-color: #222222;
+}
+#footer div {
+    width: 50%; float: left; font-size: 20px; color: #999999;
+}
+#f1 div {
+    width: 100%; float: left; text-align: center; padding-top: 15px;
+}
+#f2 { margin-top: 20px; box-sizing: border-box}
+#f2 div {
+    width: 100%; margin-top: 10px; text-align: center;
+}
+#f2 img:hover { cursor: pointer}
+#f21 { font-weight: bold; font-size: 30px;}
+
+

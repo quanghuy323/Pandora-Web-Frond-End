@@ -1,0 +1,27 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #hang { width: 100%; height: auto}
+        #hang table {border: 1px solid black;}
+        #hang th {background-color: #888888}
+        #hang img { width: 100px; height: 100px;}
+    </style>
+    <script src="js/gioHang.js"></script>
+</head>
+<body onload="show()">
+<div>
+    <div id="hang"></div>
+    <div id="ttkh">
+        <form action="index2.html">
+            ho ten <input type="text" id="ten" required="required">*<br/>
+            dien thoai <input type="text" id="dt" required="required" pattern="^[0-9]{10}$">*<br/>
+            <input type="submit" value="submit" onclick="xongddh()">
+        </form>
+        <a href="#" onclick="window.history.back()">tiep tuc mua hang</a>
+    </div>
+</div>
+</body>
+</html>

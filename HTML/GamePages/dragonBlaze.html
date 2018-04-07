@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Dragon Blaze</title>
+    <link href="../../css/Ingame.css" media="screen and (min-width: 768px)" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="../../js/Animation.js"></script>
+</head>
+<body onload="statusLogIn2()">
+<!--Header-->
+<div id="header">
+    <div id="logo">
+        <a href="../FinalProject.html">
+            <img src="../../img/header.png" style="width: 60%; height: 75px">
+        </a>
+    </div>
+    <div>
+        <ul class="menu">
+            <li>
+                <a href="../SignIn.html" target="_self">
+                    <div id="Account" onmouseover="showLogOut()">&nbsp;</div>
+                </a>
+                <ul class="submenu" id="LogOut">
+                    <li onclick="logOutAccount()">
+                        <a href="../SignIn.html" target="_self"><div >Log Out</div></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../AllGames.html" target="_self">All Games</a></li>
+            <li>Genre Games
+                <ul class="submenu">
+                    <li><a href="../ActionGames.html" target="_self">Actions</a></li>
+                    <li><a href="../AdvantureGames.html" target="_self">Adventure</a></li>
+                    <li><a href="../SportGames.html" target="_self">Sport</a></li>
+                </ul>
+            </li>
+            <li>Top Games
+                <ul class="submenu">
+                    <li><a href="../TopGames2016.html" target="_self">2016</a></li>
+                    <li><a href="../TopGames2015.html" target="_self">2015</a></li>
+                    <li><a href="../TopGames2014.html" target="_self">2014</a></li>
+                </ul>
+            </li>
+            <li id="search"><img src="../../img/games/kinhlup.png" onclick="showSearchingBox()"></li>
+        </ul>
+    </div>
+</div>
+<div id="seachBox" >
+    <form name="search">
+        <input type="text" placeholder="Searching...." id="inputBox" name="inputBox" oninput="showDSGames(this)" checked>
+    </form>
+    <img src="../../img/X.png" id="xbutton" onclick="hideSearchingBox()">
+</div>
+<div id="DSGames">
+    <a href="../Game.html" target="_blank"><div class="dsGame"><img src="../../img/games/diablo3.jpg" class="IconGame"> <div class="dsGameText">Diablo 3</div></div></a>
+    <a href="../GamePages/CrushLand.html" target="_blank"><div class="dsGame"><img src="../../img/games/CrushLands.jpg" class="IconGame"> <div class="dsGameText">Crush Lands </div></div></a>
+    <a href="../GamePages/CallOfDuty.html" target="_blank"><div class="dsGame"><img src="../../img/games/callofduty.jpg" class="IconGame"> <div class="dsGameText">Call of Duty </div></div></a>
+    <a href="../GamePages/BattleAlert.html" target="_blank"><div class="dsGame"><img src="../../img/games/Battle-Alert.jpg" class="IconGame"> <div class="dsGameText">Battle Alert </div></div></a>
+    <a href="../GamePages/DragonBall.html" target="_blank"><div class="dsGame"><img src="../../img/games/dragonball-xenoverse.png" class="IconGame"> <div class="dsGameText">Dragon Ball Xenoverse </div></div></a>
+    <a href="../GamePages/dragonBlaze.html" target="_blank"><div class="dsGame"><img src="../../img/games/dragonBlaze.jpg" class="IconGame"> <div class="dsGameText">Dragon Blaze </div></div></a>
+    <a href="../GamePages/DragonCancer.html" target="_blank"><div class="dsGame"><img src="../../img/games/dragon_cancer.jpg" class="IconGame"> <div class="dsGameText">Dragon Cancer </div></div></a>
+    <a href="../GamePages/Fable%203.html" target="_blank"><div class="dsGame"><img src="../../img/games/fable_3.jpg" class="IconGame"> <div class="dsGameText">Fable 3 </div></div></a>
+    <a href="../GamePages/HitMan.html" target="_blank"><div class="dsGame"><img src="../../img/games/hitman.jpg" class="IconGame"> <div class="dsGameText">Hit Man </div></div></a>
+    <a href="../GamePages/Naruto.html" target="_blank"><div class="dsGame"><img src="../../img/games/Naruto.png" class="IconGame"> <div class="dsGameText">Naruto </div></div></a>
+    <a href="../GamePages/BasketballManager.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/BasketballManager.jpg" class="IconGame"> <div class="dsGameText">Basketball Manager </div></div></a>
+    <a href="../GamePages/WWEImortal.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/WWEBanner.jpg" class="IconGame"> <div class="dsGameText">WWE Banner </div></div></a>
+    <a href="../GamePages/BloodBowl.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/BloodBowl.jpg" class="IconGame"> <div class="dsGameText">Blood Bowl </div></div></a>
+    <a href="../GamePages/Altelia.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/AltelierBanner.jpg" class="IconGame"> <div class="dsGameText">Altelier </div></div></a>
+    <a href="../GamePages/Beowulf.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/BeowulFBackGround.jpg" class="IconGame"> <div class="dsGameText">Beowulf </div></div></a>
+    <a href="../GamePages/DawnOfMagic.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/dawnOfMagicBanner.jpg" class="IconGame"> <div class="dsGameText">Dawn Of Magic </div></div></a>
+    <a href="../GamePages/DownOfWar.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/dawnOfWarBackGround.jpg" class="IconGame"> <div class="dsGameText">Dawn Of War </div></div></a>
+    <a href="../GamePages/DragonDogMa.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/DragonDogmaBanner.webp" class="IconGame"> <div class="dsGameText">Dragon Dogma</div></div></a>
+    <a href="../GamePages/TaleOfBerseria.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/TaleOfBerseriaBanner.jpg" class="IconGame"> <div class="dsGameText">Tale Of Berseria</div></div></a>
+    <a href="../GamePages/DeadRising.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/deadRisingBanner.jpg" class="IconGame"> <div class="dsGameText">Dead Rising</div></div></a>
+    <a href="../GamePages/Dirt3.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/Dirt3.jpg" class="IconGame"> <div class="dsGameText">Dirt 3</div></div></a>
+    <a href="../GamePages/F1_2015.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/F1_2015.jpg" class="IconGame"> <div class="dsGameText">F1 2015</div></div></a>
+    <a href="../GamePages/FairyFencer.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/FairyFencerBanner.jpg" class="IconGame"> <div class="dsGameText">Fairy Fencer</div></div></a>
+    <a href="../GamePages/LifeIsStrange.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/LifeIsStrange.png" class="IconGame"> <div class="dsGameText">Life Is Strange</div></div></a>
+    <a href="../GamePages/ForzaHorizon3.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/ForzaHorizon3.jpg" class="IconGame"> <div class="dsGameText">Forza Horizon 3</div></div></a>
+    <a href="../GamePages/FIFA14.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/FIFA14.jpg" class="IconGame"> <div class="dsGameText">FIFA 14</div></div></a>
+    <a href="../GamePages/Grid.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/GRIDBanner.jpg" class="IconGame"> <div class="dsGameText">Grid</div></div></a>
+    <a href="../GamePages/RIDE2.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/RIDE2.jpg" class="IconGame"> <div class="dsGameText">Ride 2</div></div></a>
+    <a href="../GamePages/NeedForSpeed.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/NeedForSpeed.jpg" class="IconGame"> <div class="dsGameText">Need For Speed</div></div></a>
+    <a href="../GamePages/Tennis.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/TennisBanner.jpg" class="IconGame"> <div class="dsGameText">Tennis</div></div></a>
+    <a href="../GamePages/Pes.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/PES2017.jpg" class="IconGame"> <div class="dsGameText">PES 2016</div></div></a>
+    <a href="../GamePages/ShadowBlood.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/shadowBloodBanner.png" class="IconGame"> <div class="dsGameText">Shadow Blood</div></div></a>
+    <a href="../GamePages/TheGate.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/TheGateBanner.jpg" class="IconGame"> <div class="dsGameText">The Gate</div></div></a>
+    <a href="../GamePages/Transformer.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/TransformerBanner.jpg" class="IconGame"> <div class="dsGameText">Transformer</div></div></a>
+    <a href="../GamePages/NBK2016.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/NBK2016.jpg" class="IconGame"> <div class="dsGameText">NBK 2016</div></div></a>
+    <a href="../GamePages/NBA2017.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/NBA2017.jpg" class="IconGame"> <div class="dsGameText">NBA 2017</div></div></a>
+    <a href="../GamePages/Vector36.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/Vector36.jpg" class="IconGame"> <div class="dsGameText">Vector 36</div></div></a>
+    <a href="../GamePages/AquaMoto.html" target="_blank"><div class="dsGame"><img src="../../img/Gameplay/AquaMoto.jpg" class="IconGame"> <div class="dsGameText">Aqua Moto</div></div></a>
+</div>
+<div id="bg">
+    Dragon Blaze 2013
+</div>
+<!--Body-->
+<div id="main">
+    <img src="../../img/Gameplay/dragonblazeBackGround.jpg" class="backgroundPic">
+    <div id="story">
+        <h1>STORY</h1>
+        Dragon Blaze - một tựa game RPG mang sắc màu thần thoại!
+        Hãy vén lên bức màn bí mật về bảy chiếc chìa khóa thần thánh!
+        Cùng hòa mình vào thế giới Dragon Blaze!
+
+
+        <br/>■ Tựa game RPG đỉnh cao với cốt truyện hấp dẫn.
+        Hãy làm sáng tỏ truyền thuyết về bảy chiếc chìa khóa thần thánh!
+        Hỡi hậu duệ tộc Boden, vận mệnh của thế giới đang nằm trong tay bạn!
+
+        <br/>■ Đồ họa và hiệu ứng hình ảnh ấn tượng!
+        Dễ dàng chiếm được cảm tình của ngươi chơi với nền đồ họa độc đáo.
+
+        <br/>■ Bộ sưu tập với hàng trăm đồng đội!
+        Biến nhân vật trong cốt truyện thành đồng đội.
+        Sát cánh với những chiến hữu hùng mạnh trên con đường viễn chinh.
+
+        <br/>■ Lên level và tăng cường sức mạnh dễ dàng hơn!
+        - Thăng cấp nhanh chóng với hệ thống Hầm Ngục được tối giản!
+        Vận dụng chiến thuật với vô số đội hình và hiệu ứng nhóm.
+
+        <br/>■ Bổ sung thêm các tính năng tự động tiện lợi!
+        Dễ dàng tham chiến với các tính năng Tự Động và Tự Động Gọi trợ thủ khi chiến đấu.
+    </div>
+    <div class="video">
+        <video src="../../Video/crashland.MP4" width="700px" height="500px" controls></video>
+    </div>
+    <div class="buttonNextBack">
+        <img src="../../img/back.png" class="buttonBack" onclick="backPictureGamePlay()">
+        <img src="../../img/next.png" class="buttonNext" onclick="nextPictureGamePlay()">
+    </div>
+    <div id="imgGameplay">
+        <img src="../../img/Gameplay/dragonblaze1.jpg" class="imgGameplay0">
+        <img src="../../img/Gameplay/dragonblaze2.jpg" class="imgGameplay1">
+        <img src="../../img/Gameplay/dragonblaze3.jpg" class="imgGameplay2">
+    </div>
+
+    <div class="configuration">
+        <div class="cauhinh">CONFIGURATION</div>
+        <div id="thongso">
+            OS: Windows Vista®/Windows® 7 (Latest Service Packs)<br/><br/>
+            Processor: Intel® Core 2 Duo 2.4 GHz or AMD AthlonTM 64 X2 5600+ 2.8 GHz<br/><br/>
+            Memory: 2 GB RAM<br/><br/>
+            Video: NVIDIA® GeForce® 260 or ATI Radeon™ HD 4870 or better<br/></div>
+        <div class="cauhinh2"></div>
+    </div>
+
+    <div id="download">
+        <div class="cauhinh">DOWNLOAD</div>
+        <div>
+            <h1>Diablo 3</h1>
+            <h3>SIZE : 12GB</h3><br/>
+            <div id="link">
+                <div class="linkDown" onclick="showLink(this,0)">GOOGLE DRIVE</div>
+                <div class="linkDown" onclick="showLink(this,1)">MEGA</div>
+                <div class="linkDown" onclick="showLink(this,2)">4SHARE</div>
+                <div class="linkDown" onclick="showLink(this,3)">FSHARE</div>
+            </div>
+            <div id="imgLink">
+                <a href="https://drive.google.com/drive/u/2/my-drive" target="_blank"><img src="../../img/games/google-drive.png" class="imgLinkDownLoad"></a>
+                <a href="https://megasync.en.softonic.com/" target="_blank"><img src="../../img/games/01_mega_logo.svg.png" class="imgLinkDownLoad"></a>
+                <a href="http://4share.vn/" target="_blank"><img src="../../img/games/4share.png" class="imgLinkDownLoad"></a>
+                <a href="https://www.fshare.vn/" target="_blank"><img src="../../img/games/Fshare.png" class="imgLinkDownLoad"></a>
+            </div>
+        </div>
+    </div>
+    <div id="notSignIn">
+        <div class="cauhinh">DOWNLOAD</div>
+        <a href="../SignIn.html" target="_self">
+            <div id="signin">Sign In &rarr;
+            </div>
+        </a>
+    </div>
+</div>
+<div id="slogan">
+    "ENJOY YOUR GAME"
+</div>
+<!--Footer-->
+<div id="footer">
+    <div id="f1">
+        <div>
+            <img src="../../img/pandora_logo.png" style="width: 150px; height: 100px;">
+        </div>
+        <div>
+            Copyrights © 2014 - 2016 All Rights Reserved by PandoraBox Inc.<br/>
+            Terms of Use / Privacy Policy
+        </div>
+    </div>
+    <div id="f2">
+        <div id="f21">Contact with Us</div>
+        <div>
+            <img src="../../img/phone-black.png" style="width: 20px; height: 20px">
+            <span>Phone: (84)909217723</span>
+        </div>
+        <div>
+            <img src="../../img/gmail.png" style="width: 20px; height: 20px">
+            <span>Email: Huydqse62353@fpt.edu.vn</span>
+        </div>
+        <div>
+            <img src="../../img/facebook-flat-vector-logo-400x400.png" style="width: 20px; height: 20px;">
+            <a href="https://www.facebook.com/quanghuy323" target="_blank">
+                Facebook: quanghuy323@facebook.com
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

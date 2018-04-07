@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Games 2016</title>
+    <link href="../css/TopGames.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="../js/Animation.js"></script>
+</head>
+<body onload="statusLogIn()">
+<div id="header">
+    <div id="logo">
+        <a href="FinalProject.html">
+            <img src="../img/header.png" style="width: 60%; height: 75px">
+        </a>
+    </div>
+    <div>
+        <ul class="menu">
+            <li>
+                <a href="SignIn.html" target="_self">
+                    <div id="Account" onmouseover="showLogOut()">&nbsp;</div>
+                </a>
+                <ul class="submenu" id="LogOut">
+                    <li onclick="logOutAccount()">
+                        <a href="SignIn.html" target="_self"><div >Log Out</div></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="AllGames.html" target="_self">All Games</a></li>
+            <li>Genre Games
+                <ul class="submenu">
+                    <li><a href="ActionGames.html" target="_self">Actions</a></li>
+                    <li><a href="AdvantureGames.html" target="_self">Adventure</a></li>
+                    <li><a href="SportGames.html" target="_self">Sport</a></li>
+                </ul>
+            </li>
+            <li>Top Games
+                <ul class="submenu">
+                    <li><a href="TopGames2016.html" target="_self">2016</a></li>
+                    <li><a href="TopGames2015.html" target="_self">2015</a></li>
+                    <li><a href="TopGames2014.html" target="_self">2014</a></li>
+                </ul>
+            </li>
+            <li id="search"><img src="../img/games/kinhlup.png" onclick="showSearchingBox()"></li>
+        </ul>
+    </div>
+</div>
+<div id="seachBox" >
+    <form name="search">
+        <input type="text" placeholder="Searching...." id="inputBox" name="inputBox" oninput="showDSGames(this)" checked>
+    </form>
+    <img src="../img/X.png" id="xbutton" onclick="hideSearchingBox()">
+</div>
+<div id="DSGames">
+    <a href="Game.html" target="_blank"><div class="dsGame"><img src="../img/games/diablo3.jpg" class="IconGame"> <div class="dsGameText">Diablo 3</div></div></a>
+    <a href="GamePages/CrushLand.html" target="_blank"><div class="dsGame"><img src="../img/games/CrushLands.jpg" class="IconGame"> <div class="dsGameText">Crush Lands </div></div></a>
+    <a href="GamePages/CallOfDuty.html" target="_blank"><div class="dsGame"><img src="../img/games/callofduty.jpg" class="IconGame"> <div class="dsGameText">Call of Duty </div></div></a>
+    <a href="GamePages/BattleAlert.html" target="_blank"><div class="dsGame"><img src="../img/games/Battle-Alert.jpg" class="IconGame"> <div class="dsGameText">Battle Alert </div></div></a>
+    <a href="GamePages/DragonBall.html" target="_blank"><div class="dsGame"><img src="../img/games/dragonball-xenoverse.png" class="IconGame"> <div class="dsGameText">Dragon Ball Xenoverse </div></div></a>
+    <a href="GamePages/dragonBlaze.html" target="_blank"><div class="dsGame"><img src="../img/games/dragonBlaze.jpg" class="IconGame"> <div class="dsGameText">Dragon Blaze </div></div></a>
+    <a href="GamePages/DragonCancer.html" target="_blank"><div class="dsGame"><img src="../img/games/dragon_cancer.jpg" class="IconGame"> <div class="dsGameText">Dragon Cancer </div></div></a>
+    <a href="GamePages/Fable%203.html" target="_blank"><div class="dsGame"><img src="../img/games/fable_3.jpg" class="IconGame"> <div class="dsGameText">Fable 3 </div></div></a>
+    <a href="GamePages/HitMan.html" target="_blank"><div class="dsGame"><img src="../img/games/hitman.jpg" class="IconGame"> <div class="dsGameText">Hit Man </div></div></a>
+    <a href="GamePages/Naruto.html" target="_blank"><div class="dsGame"><img src="../img/games/Naruto.png" class="IconGame"> <div class="dsGameText">Naruto </div></div></a>
+    <a href="GamePages/BasketballManager.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/BasketballManager.jpg" class="IconGame"> <div class="dsGameText">Basketball Manager </div></div></a>
+    <a href="GamePages/WWEImortal.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/WWEBanner.jpg" class="IconGame"> <div class="dsGameText">WWE Banner </div></div></a>
+    <a href="GamePages/BloodBowl.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/BloodBowl.jpg" class="IconGame"> <div class="dsGameText">Blood Bowl </div></div></a>
+    <a href="GamePages/Altelia.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/AltelierBanner.jpg" class="IconGame"> <div class="dsGameText">Altelier </div></div></a>
+    <a href="GamePages/Beowulf.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/BeowulFBackGround.jpg" class="IconGame"> <div class="dsGameText">Beowulf </div></div></a>
+    <a href="GamePages/DawnOfMagic.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/dawnOfMagicBanner.jpg" class="IconGame"> <div class="dsGameText">Dawn Of Magic </div></div></a>
+    <a href="GamePages/DownOfWar.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/dawnOfWarBackGround.jpg" class="IconGame"> <div class="dsGameText">Dawn Of War </div></div></a>
+    <a href="GamePages/DragonDogMa.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/DragonDogmaBanner.webp" class="IconGame"> <div class="dsGameText">Dragon Dogma</div></div></a>
+    <a href="GamePages/TaleOfBerseria.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TaleOfBerseriaBanner.jpg" class="IconGame"> <div class="dsGameText">Tale Of Berseria</div></div></a>
+    <a href="GamePages/DeadRising.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/deadRisingBanner.jpg" class="IconGame"> <div class="dsGameText">Dead Rising</div></div></a>
+    <a href="GamePages/Dirt3.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/Dirt3.jpg" class="IconGame"> <div class="dsGameText">Dirt 3</div></div></a>
+    <a href="GamePages/F1_2015.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/F1_2015.jpg" class="IconGame"> <div class="dsGameText">F1 2015</div></div></a>
+    <a href="GamePages/FairyFencer.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/FairyFencerBanner.jpg" class="IconGame"> <div class="dsGameText">Fairy Fencer</div></div></a>
+    <a href="GamePages/LifeIsStrange.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/LifeIsStrange.png" class="IconGame"> <div class="dsGameText">Life Is Strange</div></div></a>
+    <a href="GamePages/ForzaHorizon3.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/ForzaHorizon3.jpg" class="IconGame"> <div class="dsGameText">Forza Horizon 3</div></div></a>
+    <a href="GamePages/FIFA14.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/FIFA14.jpg" class="IconGame"> <div class="dsGameText">FIFA 14</div></div></a>
+    <a href="GamePages/Grid.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/GRIDBanner.jpg" class="IconGame"> <div class="dsGameText">Grid</div></div></a>
+    <a href="GamePages/RIDE2.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/RIDE2.jpg" class="IconGame"> <div class="dsGameText">Ride 2</div></div></a>
+    <a href="GamePages/NeedForSpeed.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/NeedForSpeed.jpg" class="IconGame"> <div class="dsGameText">Need For Speed</div></div></a>
+    <a href="GamePages/Tennis.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TennisBanner.jpg" class="IconGame"> <div class="dsGameText">Tennis</div></div></a>
+    <a href="GamePages/Pes.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/PES2017.jpg" class="IconGame"> <div class="dsGameText">PES 2016</div></div></a>
+    <a href="GamePages/ShadowBlood.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/shadowBloodBanner.png" class="IconGame"> <div class="dsGameText">Shadow Blood</div></div></a>
+    <a href="GamePages/TheGate.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TheGateBanner.jpg" class="IconGame"> <div class="dsGameText">The Gate</div></div></a>
+    <a href="GamePages/Transformer.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/TransformerBanner.jpg" class="IconGame"> <div class="dsGameText">Transformer</div></div></a>
+    <a href="GamePages/NBK2016.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/NBK2016.jpg" class="IconGame"> <div class="dsGameText">NBK 2016</div></div></a>
+    <a href="GamePages/NBA2017.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/NBA2017.jpg" class="IconGame"> <div class="dsGameText">NBA 2017</div></div></a>
+    <a href="GamePages/Vector36.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/Vector36.jpg" class="IconGame"> <div class="dsGameText">Vector 36</div></div></a>
+    <a href="GamePages/AquaMoto.html" target="_blank"><div class="dsGame"><img src="../img/Gameplay/AquaMoto.jpg" class="IconGame"> <div class="dsGameText">Aqua Moto</div></div></a>
+</div>
+<!--Body-->
+<div id="bg">
+    Top Games 2016
+</div>
+
+<div id="main">
+    <div class="XH">
+        <h1>1. Diablo 3</h1>
+        <img src="../img/games/diablo3.jpg"><br/>
+        <br/>So với 2 phần trước, Diablo III có đồ họa vượt trội và ấn tượng hơn hẳn. Hình ảnh cực kì sắc nét, chân thật và mượt mà.
+        Bên cạnh đó, hiệu ứng skill được thiết kế đẹp hơn, lộng lẫy và hoành tráng hơn, khiến cho người chơi thích mê.
+        Rõ ràng, đây là những thay đổi cơ bản và đã được dự đoán từ trước.<br/><br/>
+        Về âm thanh, do được đội ngũ đầy kinh nghiệm của Blizzard đảm trách nên bạn chắc chắn sẽ hài lòng ở phần này.
+        Những đoạn nhạc đầy cảm xúc với âm hưởng lúc trầm, lúc bổng khiến cho người chơi bị kéo theo mạch game lúc nào không hay biết.<br/><br/>
+        Tóm lại, “siêu phẩm” Diablo sau nhiều năm “mai danh ẩn tích” đã trở lại mạnh mẽ với phiên bản thứ 3.
+        Nếu bạn chưa biết, thỉ chỉ trong vài ngày đầu tiên, Diablo III đã phá vỡ mọi kỷ lục doanh thu từ trước tới nay.
+        <br/><br/><a href="Game.html" target="_blank">Click here to show more information</a>
+    </div>
+    <div class="XH">
+        <h1>2. Need For Speed</h1>
+        <img src="../img/games/Need%20for%20Speed%202015%20header%20art.jpg"><br/>
+        <br/>Need for Speed: Most Wanted là một trò chơi thể loại đua xe được phát hành bởi Electronic Arts.
+        cải tiến hơn so với các phiên bản trước, Criterion Games (một phần của EA) là hãng phát triển game này.
+        Game này có khá nhiều loại xe mới và lạ, thậm chí có cả một chiếc F1 giúp người chơi có một trải nghiệm mới.
+        So với phiên bản 2005, phiên bản 2012 này có cốt truyện khác hơn, thành phố cũng hiện đại hơn. Thành phố này cực kỳ hiện đại nhưng có một thế giới ngầm chuyên đua xe gây phá rối. Người chơi cũng là một trong số đó. Các AI lái xe cảnh sát cũng nhanh nhạy và thông minh hơn nên việc trốn thoát cũng khó hơn, khiến cho game hấp dẫn hơn rất nhiều.
+        <br/><br/><a href="GamePages/NeedForSpeed.html" target="_blank">Click here to show more information</a>
+    </div>
+    <div class="XH">
+        <h1>3. Naruto</h1>
+        <img src="../img/games/Naruto.png"><br/>
+        <br/>Naruto Shippuden Ultimate Ninja Storm 4 là phần tiếp theo của Naruto Shippuden: Ultimate Ninja Storm 3, và là phần cuối cùng trong series. Trong Naruto Shippuden Ultimate Ninja STORM 4, một tập hợp các kỹ năng Ninja sẽ là của bạn để sử dụng chống lại những kẻ thù ác liệt nhất mà bạn từng gặp phải. Nó có lẽ là trò chơi lớn nhất trong series về danh sách nhân vật và phạm vi của câu chuyện. Naruto Shippuden: Ultimate Ninja Storm 4 sẽ đưa các fan đến cuối của bộ truyện tranh Naruto và Anime như để kết luận cuộc chiến Great Shinobi War và đóng lại seri Ultimate Ninja Storm.
+
+        <br/>Nếu bạn đã quen thuộc với các trò chơi Naruto Ultimate Ninja trước, bạn sẽ không có vấn đề chọn lên và đi với phần mới này. Các điều khiển là như nhau và phong cách chơi là khá giống nhau.
+
+        <br/>Naruto Shippuden Ultimate Ninja Storm 4 có tính năng gameplay giống như của các game trước trong series, trong đó các bạn điều khiển nhân vật của mình chiến đấu trong đấu trường 3D. Một tính năng quay trở lại từ bản gốc Ultimate Ninja Storm là khả năng "Wall Running". Các bạn sẽ có thể thực hiện để chiến đấu trên các bức tường của đấu trường. Một tính năng mới là khả năng trao đổi nhân vật trong trận chiến, gọi là Leader Swap hay Change Leader System, nơi các bạn có thể tận dụng lợi thế kỹ năng của tất cả các nhân vật trong nhóm của mình bằng cách chuyển đổi nhân vật chính trong suốt cuộc chiến. Trò chơi sẽ thực tế hơn những người tiền nhiệm của nó, khi các bộ trang phục, vũ khí và áo giáp có thể bị hư hỏng và thậm chí tan ra nếu bị trúng đòn. Ví dụ, lửa có thể đốt quần áo. Tuy nhiên, người chơi có thể dập tắt đám cháy bằng nước.
+
+        <br/><br/><a href="GamePages/Naruto.html" target="_blank">Click here to show more information</a>
+    </div>
+    <div class="XH">
+        <h1>4. PES 2016</h1>
+        <img src="../img/Gameplay/PES2017.jpg"><br/>
+        <br/>Pro Evolution Soccer 2017 (PES 2017, World Soccer: Winning Eleven 2017) là game bóng đá trong seri Pro Evolution Soccer phát triển và phát hành bởi Konami. Game sẽ có những tính năng mới mẻ như Real Touch, Precise Pass, Goal Keeping, Total Team Control, Corner Kick Control, Adaptive AI, Authentic Visuals, Natural Player Movement, ... và sử dụng Fox Engine, công nghệ được biết đến từ những phiên bản trước trong series PES, cũng như từ Metal Gear Solid V: The Phantom ... PES 2017 là game bóng đá trong seri Pro Evolution Soccer phát triển và phát hành bởi Konami. Game sẽ có những tính năng mới mẻ như Real Touch, Precise Pass, Goal Keeping, Total Team Control, Corner Kick Control, Adaptive AI, Authentic Visuals, Natural Player Movement, ... và sử dụng Fox Engine, công nghệ được biết đến từ những phiên bản trước trong series PES, cũng như từ Metal Gear Solid V: The Phantom Pain.
+
+        <br/>Pro Evolution Soccer là một series nổi tiếng với nhiều người. Trong khi FIFA đã thống trị bảng xếp hạng doanh thu thì Pro Evolution Soccer (hay PES) vẫn lặng lẽ phát hành đều đặn hàng năm, và hu hút một lượng fan hâm mộ của riêng nó. Điều gì đang xảy ra? Đó là sau đó sự phân chia; Anh muốn những cái tên được cấp phép, hoặc một trò chơi đẹp với một vài menu xấu xí và những cầu thủ với những cái tên kỳ lạ? Câu trả lời là của bạn.
+
+        <br/>Pro Evolution Soccer 2017 là game thể thao, mô phỏng bóng đá, phát hành bởi Konami. Trái với đối thủ của mình - FIFA của Electronic Arts - Pro Evolution Soccer không có giấy phép của International Football Federation, nhưng nó có với giấy phép của Champions League, Europe League, và Europe Supercup. Ngày 26 tháng bảy năm 2016, Konami Digital Entertainment chính thức công bố quan hệ đối tác cao cấp với FC Barcelona cho phép truy cập "rộng rãi" đến sân vận động Nou Camp, mà sẽ độc quyền trong trò chơi trong ba năm. Ngoài ra, Konami cũng công bố quan hệ đối tác tiếp tục chính thức với Liverpool FC, Borussia Dortmund và Club Atlético River Plate sẽ cho phép sử dụng khuôn mặt cầu thủ, logo câu lạc bộ và sân vận động trong nội dung độc quyền khác. Phiên bản 2017 giới thiệu một loạt các mới lạ, chỉ có trên thế hệ console thứ 8 - PlayStation 4 và Xbox One như Real Touch, Precise Pass, Goal Keeping, Total Team Control, Corner Kick Control, Adaptive AI, Authentic Visuals, Natural Player Movement.
+
+        <br/><br/><a href="GamePages/Pes.html" target="_blank">Click here to show more information</a>
+    </div>
+    <div class="XH">
+        <h1>5. Call Of Duty</h1>
+        <img src="../img/Gameplay/callOfDutyBackground.webp"><br/>
+        <br/>Call of Duty Black Ops III (Call of Duty Black Ops 3, Call of Duty 2015, Call of Duty 12) là game bắn súng góc nhìn thứ nhất, là phiên bản thứ 12 trong seri Call of Duty. Game đưa người chơi vào chiến trường mạnh mẽ của tương lai, nơi mà công nghệ sinh học đã cho phép tạo ra những người lính công nghệ cao, những quân nhân nửa người nửa robot với những khả năng vượt trội.
+
+        <br/>Lịch sử đã chứng minh, từ khi con người còn lấy đá ném nhau, rồi chiến đấu bằng cung tên gươm giáo...cho đến ngày nay, luôn có một ai đó muốn thống trị nhân loại (hay ít nhất cũng là một phần nhân loại). Và Call of Duty Black Ops III cũng giới thiệu một câu truyện như vậy. Các bạn sẽ theo chân một đội Black Ops trong một hoạt động cứu hộ khi họ khám phá ra một âm mưu đe dọa tất cả thế giới. Các bạn được kêu gọi để điều tra sự biến mất của một nhóm CIA tại Singapore. Trong quá trình thực thi nhiệm vụ, họ đã mất liên lạc với trung tâm trong một vụ rò rỉ thông tin tình báo quân sự lớn nhất trong lịch sử. "Bạn phải tìm ra sự thật",  "Thành viên trong nhóm của ta đang mất tích, và thông tin đang đưa chúng ta đến Cairo." Chào mừng bạn đến với năm 2065 trong Call of Duty Black Ops III.
+
+        <br/>- Trong Campaign mode, các bạn phải đi du lịch qua một loạy các điểm nóng của một cuộc Chiến tranh Lạnh mới để tìm những đồng đội bị mất tích của bạn. Các bạn có thể chơi Campaign một mình (Solo) hoặc hợp tác với bạn bè (cooperatively).
+
+        <br/><br/><a href="GamePages/CallOfDuty.html" target="_blank">Click here to show more information</a><br/><br/><br/><br/>
+    </div>
+</div>
+
+<div id="slogan">
+    "RE:LIFE IN YOUR GAME"
+</div>
+<!--Footer-->
+<div id="footer">
+    <div id="f1">
+        <div>
+            <img src="../img/pandora_logo.png" style="width: 150px; height: 100px;">
+        </div>
+        <div>
+            Copyrights © 2014 - 2016 All Rights Reserved by PandoraBox Inc.<br/>
+            Terms of Use / Privacy Policy
+        </div>
+    </div>
+    <div id="f2">
+        <div id="f21">Contact with Us</div>
+        <div>
+            <img src="../img/phone-black.png" style="width: 20px; height: 20px">
+            <span>Phone: (84)909217723</span>
+        </div>
+        <div>
+            <img src="../img/gmail.png" style="width: 20px; height: 20px">
+            <span>Email: Huydqse62353@fpt.edu.vn</span>
+        </div>
+        <div>
+            <img src="../img/facebook-flat-vector-logo-400x400.png" style="width: 20px; height: 20px;">
+            <a href="https://www.facebook.com/quanghuy323" target="_blank">
+                Facebook: quanghuy323@facebook.com
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

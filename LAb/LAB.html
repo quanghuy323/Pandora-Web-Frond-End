@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main {width: 100%; height: 200px;}
+        #input{ width: 100%; float: left; height: 20%; background-color: yellow; border-bottom: 1px solid #999999 }
+        #box  {float: right; padding-right: 20px; width: 300px;}
+        #menu {width: 100%; float: left; height: 80%; background-color: red; box-sizing: border-box}
+        #menu span {width: 100%; height: 70%; float: left; text-align: center; box-sizing: border-box; padding-top: 50px;}
+        #menu ul {width: 100%; height: 30%; float: left}
+        #menu li {list-style-type: none; float: left; text-align: center; border: solid 1px black; width: 150px;}
+        li:hover {cursor: pointer; background-color: #fff987}
+    </style>
+    <script>
+        function changColor(x) {
+            var arr = document.getElementsByTagName("li");
+            for (var i = 0; i < arr.length; i++) {
+                arr[i].className = "white";
+                arr[i].style.backgroundColor = "white";
+            }
+            x.style.backgroundColor = "pink";
+        }
+        function open() {
+            var e = document.getElementById("box")
+            var h = e.value;
+            var t = window.localStorage.setItem(h, h+".html");
+            window.open(t);
+        }
+    </script>
+</head>
+<body>
+<div id="main">
+    <div id="input">
+        <input type="text" placeholder="can we help you find something?" id="box" required="required">
+    </div>
+    <div id="menu">
+        <span>CALVIN KLEIN</span>
+        <ul>
+            <li class="white" onclick="changColor(this); open()">WOMEN</li>
+            <li class="white" onclick="changColor(this)">MEN</li>
+            <li class="white" onclick="changColor(this)">UNDERWEAR</li>
+            <li class="white" onclick="changColor(this)">FLAGREANCE</li>
+            <li class="white" onclick="changColor(this)">HOME</li>
+            <li class="white" onclick="changColor(this)">SAVE</li>
+            <li class="white" onclick="changColor(this)">PROJECT</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

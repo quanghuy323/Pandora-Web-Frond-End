@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>On Scroll</title>
+    <style>
+        #main {width: 100%; height: 1000px; background-color: #888888}
+        #QC {width: 200px; height: 200px; background-color: yellow;}
+    </style>
+    <script>
+        function demo() {
+            var y = window.pageYOffset;
+            var t = document.getElementById("QC");
+            t.style.transform = "translateY("+(y+200)+"px)";
+            t.style.zIndex = 1;
+            t.style.position = "absolute";
+            t.style.transition = "all 1s";
+        }
+    </script>
+</head>
+<body onscroll="demo()">
+<div id="QC">
+    <p>X</p>
+</div>
+<div id="main">
+
+</div>
+
+
+</body>
+</html>
